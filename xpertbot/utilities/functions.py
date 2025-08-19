@@ -9,24 +9,28 @@ from pages.creds import *
 from utilities.utils import AutomationLogger
 
 
-def XpertLogin(self,username,password):
-    log=AutomationLogger.automation()
-    email_locator= (By.XPATH,email)
-    log.info("Location email")
+def XpertLogin(self, username, password):
+    log = AutomationLogger.automation()
+    email_locator = (By.XPATH, email)
+    
     try:
-        WebDriverWait(self.driver,60).until(
+        WebDriverWait(self.driver, 60).until(
             EC.presence_of_element_located(email_locator)
         )
-    except NoSuchElementException as e:
-        self.log.warning("unable to locate element")
-        self.driver.find_element(By.XPATH,email).send_keys(username)
-        log.info("Sent username")
-        time.sleep(1)
-        self.driver.find_element(By.XPATH,'//*[@id="password"]').send_keys(password)
-        time.sleep(1)
-        self.driver.find_element(By.XPATH,'/html/body/div/div/form/button').click()
-        time.sleep(1)
-        self.driver.find_element(By.XPATH,'//*[@id="nova"]/div/div[2]/div[1]/div[2]/div/button/div').click()
-        time.sleep(1)
-        self.driver.find_element(By.LINK_TEXT,'Logout').click()
-        time.sleep(3)
+        log.info("Email element located")
+    except TimeoutException:
+        log.warning("Unable to locate email element in 60 seconds")
+        raise
+
+    self.driver.find_element(By.XPATH, email).send_keys(username)
+    log.info("Sent username")
+    
+    self.driver.find_element(By.XPATH, '//*[@id="password"]').send_keys(password)
+    log.info("Sent password")
+    
+    self.driver.find_element(By.XPATH, '/html/body/div/div/form/button').click()
+    log.info("Clicked login button")
+    
+    self.driver.find_element(By.XPATH, '//*[@id="nova"]/div/div[2]/div[1]/div[2]/div/button/div').click()
+    self.driver.find_element(By.LINK_TEXT, 'Logout').click()
+    log.info("Logged out")

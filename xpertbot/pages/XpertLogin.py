@@ -9,5 +9,5 @@ class Xpert6():
     def __init__(self, driver):
         self.driver = driver
 
-    def XpertbotLogin(self, username, password): # page of xpertbotlogin
+    def XpertbotLogin(self, username, password):
         XpertLogin(self, username, password)

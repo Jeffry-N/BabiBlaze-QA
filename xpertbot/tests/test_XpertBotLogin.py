@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from utilities.utils import AutomationLogger
 from pages.XpertLogin import Xpert6
-from pages.creds import username, password, email  # import your creds
+from pages.creds import username, password, email
 
 log = AutomationLogger.automation()
 
