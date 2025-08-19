@@ -5,9 +5,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from utilities.functions import *
 
-class Xpert6():
+class Blaze():
     def __init__(self, driver):
         self.driver = driver
 
-    def XpertbotLogin(self, username, password):
-        XpertLogin(self, username, password)
+    def BlazeAdminLogin(self, username, password):
+        BlazeLogin(self, username, password)

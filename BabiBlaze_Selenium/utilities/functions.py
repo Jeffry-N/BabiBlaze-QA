@@ -9,7 +9,7 @@ from pages.creds import *
 from utilities.utils import AutomationLogger
 
 
-def XpertLogin(self, username, password):
+def BlazeLogin(self, username, password):
     log = AutomationLogger.automation()
     email_locator = (By.XPATH, email)
     
@@ -28,10 +28,10 @@ def XpertLogin(self, username, password):
     self.driver.find_element(By.XPATH, '//*[@id="password"]').send_keys(password)
     log.info("Sent password")
     
-    self.driver.find_element(By.XPATH, '/html/body/div/div/form/button').click()
+    self.driver.find_element(By.XPATH, '/html/body/div/div/div[2]/form/button').click()
     log.info("Clicked login button")
 
-    dashboard_xpath = '/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div/div'
+    dashboard_xpath = '/html/body/div[1]/div/div[2]/div[2]/div[1]/div/div/div/div'
     try:
         WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located((By.XPATH, dashboard_xpath))
