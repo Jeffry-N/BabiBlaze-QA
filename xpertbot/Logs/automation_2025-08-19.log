@@ -14,3 +14,15 @@
 2025-08-19 20:00:22,086 - XpertLogin - INFO - Sent password
 2025-08-19 20:00:26,740 - XpertLogin - INFO - Clicked login button
 2025-08-19 20:00:26,741 - <module> - INFO - Login function executed successfully
+2025-08-19 20:45:52,684 - <module> - INFO - Test has started
+2025-08-19 20:45:52,699 - XpertLogin - INFO - Email element located
+2025-08-19 20:45:52,721 - XpertLogin - INFO - Sent username
+2025-08-19 20:45:52,734 - XpertLogin - INFO - Sent password
+2025-08-19 20:46:06,862 - XpertLogin - INFO - Clicked login button
+2025-08-19 20:46:06,862 - <module> - INFO - Login function executed successfully
+2025-08-19 20:46:36,386 - <module> - INFO - Test has started
+2025-08-19 20:46:36,400 - XpertLogin - INFO - Email element located
+2025-08-19 20:46:36,421 - XpertLogin - INFO - Sent username
+2025-08-19 20:46:36,434 - XpertLogin - INFO - Sent password
+2025-08-19 20:46:45,665 - XpertLogin - INFO - Clicked login button
+2025-08-19 20:46:45,665 - <module> - INFO - Login function executed successfully
