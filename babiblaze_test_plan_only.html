@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabiBlaze Test Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c5530;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #4CAF50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .instructions {
+            background-color: #e8f5e8;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .instructions h3 {
+            margin-top: 0;
+            color: #2c5530;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BabiBlaze Test Plan</h1>
+
+        <h2>Test Plan Overview</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Test Plan ID</strong></td>
+                    <td>BLAZE-TP-001</td>
+                </tr>
+                <tr>
+                    <td><strong>Application Under Test</strong></td>
+                    <td>BabiBlaze Web Application</td>
+                </tr>
+                <tr>
+                    <td><strong>Tester</strong></td>
+                    <td>Jeffry Nassif (QA Intern)</td>
+                </tr>
+                <tr>
+                    <td><strong>Test Environment</strong></td>
+                    <td>Kubuntu OS using Firefox browser</td>
+                </tr>
+                <tr>
+                    <td><strong>Test Strategy</strong></td>
+                    <td>Manual execution of 10 defined test cases</td>
+                </tr>
+                <tr>
+                    <td><strong>Test Type</strong></td>
+                    <td>Functional Testing</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Test Objectives</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Objective</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Verify Core Features</td>
+                    <td>Verify that the core features of BabiBlaze function correctly as per the 10 manual test cases</td>
+                </tr>
+                <tr>
+                    <td>Identify Defects</td>
+                    <td>Identify any defects or issues encountered during test execution</td>
+                </tr>
+                <tr>
+                    <td>Validate Error Handling</td>
+                    <td>Validate proper error handling for negative test scenarios included in the test cases</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Test Scope</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Test Area</th>
+                    <th>Description</th>
+                    <th>Priority</th>
+                    <th>In Scope</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>User Registration & Login</td>
+                    <td>Verify user can register and login successfully</td>
+                    <td>High</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Appointment Booking</td>
+                    <td>Test appointment scheduling functionality</td>
+                    <td>High</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Service Search</td>
+                    <td>Validate service search and filtering</td>
+                    <td>Medium</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Payment Processing</td>
+                    <td>Test payment gateway integration</td>
+                    <td>Critical</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Logout</td>
+                    <td>Verify proper session termination</td>
+                    <td>Medium</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Test Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Activity</th>
+                    <th>Status/Date</th>
+                    <th>Responsible</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Test case preparation</td>
+                    <td>Completed</td>
+                    <td>Jeffry Nassif</td>
+                </tr>
+                <tr>
+                    <td>Test execution and logging results</td>
+                    <td>Ongoing</td>
+                    <td>Jeffry Nassif</td>
+                </tr>
+                <tr>
+                    <td>Bug documentation</td>
+                    <td>As issues arise during execution</td>
+                    <td>Jeffry Nassif</td>
+                </tr>
+                <tr>
+                    <td>Final test summary reporting</td>
+                    <td>At internship completion</td>
+                    <td>Jeffry Nassif</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Entry and Exit Criteria</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Criteria Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Entry Criteria</strong></td>
+                    <td>Completion and review of the 10 test cases</td>
+                </tr>
+                <tr>
+                    <td><strong>Entry Criteria</strong></td>
+                    <td>BabiBlaze application deployed and accessible</td>
+                </tr>
+                <tr>
+                    <td><strong>Exit Criteria</strong></td>
+                    <td>Execution and logging of all 10 test cases completed</td>
+                </tr>
+                <tr>
+                    <td><strong>Exit Criteria</strong></td>
+                    <td>Documentation of any critical or high priority bugs found</td>
+                </tr>
+                <tr>
+                    <td><strong>Exit Criteria</strong></td>
+                    <td>Preparation of final test report</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Risks and Mitigation</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Risk</th>
+                    <th>Impact Level</th>
+                    <th>Probability</th>
+                    <th>Mitigation Strategy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Limited testing time</td>
+                    <td>Medium</td>
+                    <td>High</td>
+                    <td>Prioritize executing high-impact test cases first</td>
+                </tr>
+                <tr>
+                    <td>Application unavailability</td>
+                    <td>High</td>
+                    <td>Low</td>
+                    <td>Communicate promptly with internship supervisor if issues occur</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Resources</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Resource Type</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Human Resources</td>
+                    <td>Tester: Jeffry Nassif (QA Intern)</td>
+                </tr>
+                <tr>
+                    <td>Tools</td>
+                    <td>OnlyOffice for test cases and logging, web browsers for execution</td>
+                </tr>
+                <tr>
+                    <td>Environment</td>
+                    <td>Kubuntu OS, Firefox browser, stable internet connection</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Deliverables</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Deliverable</th>
+                    <th>Description</th>
+                    <th>Format</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Manual test cases document</td>
+                    <td>Excel sheet with 10 test cases</td>
+                    <td>Excel (.xlsx)</td>
+                </tr>
+                <tr>
+                    <td>Test execution logs</td>
+                    <td>Excel updated with actual results and pass/fail status</td>
+                    <td>Excel (.xlsx)</td>
+                </tr>
+                <tr>
+                    <td>Bug reports</td>
+                    <td>Documented bugs found during testing</td>
+                    <td>HTML (.html)</td>
+                </tr>
+            </tbody>
+        </table>
