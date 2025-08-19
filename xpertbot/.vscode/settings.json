@@ -1,9 +1,0 @@
-{
-    "python.testing.pytestArgs": [
-        "tests",
-        "--html=reports/testxpertbot.html"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true,
-    "python.testing.autoTestDiscoverOnSaveEnabled": false
-}
