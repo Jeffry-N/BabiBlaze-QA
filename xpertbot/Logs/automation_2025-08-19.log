@@ -39,3 +39,10 @@
 2025-08-19 20:54:48,936 - XpertLogin - INFO - Clicked login button
 2025-08-19 20:54:49,443 - XpertLogin - INFO - Dashboard element found – login successful
 2025-08-19 20:54:49,443 - <module> - INFO - Login function executed successfully
+2025-08-19 20:55:41,996 - <module> - INFO - Test has started
+2025-08-19 20:55:42,015 - XpertLogin - INFO - Email element located
+2025-08-19 20:55:42,041 - XpertLogin - INFO - Sent username
+2025-08-19 20:55:42,050 - XpertLogin - INFO - Sent password
+2025-08-19 20:55:53,614 - XpertLogin - INFO - Clicked login button
+2025-08-19 20:55:54,123 - XpertLogin - INFO - Dashboard element found – login successful
+2025-08-19 20:55:54,124 - <module> - INFO - Login function executed successfully
