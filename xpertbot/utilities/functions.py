@@ -30,3 +30,13 @@ def XpertLogin(self, username, password):
     
     self.driver.find_element(By.XPATH, '/html/body/div/div/form/button').click()
     log.info("Clicked login button")
+
+    dashboard_xpath = '/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div/div'
+    try:
+        WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, dashboard_xpath))
+        )
+        log.info("Dashboard element found – login successful")
+    except TimeoutException:
+        log.error("Dashboard element not found – login may have failed")
+        raise
