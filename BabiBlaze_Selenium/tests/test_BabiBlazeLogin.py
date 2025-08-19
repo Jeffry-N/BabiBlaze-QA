@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from utilities.utils import AutomationLogger
-from pages.BlazeLogin import Blaze
+from pages.BlazeLogin import Blaze1
 from pages.creds import username, password, email
 
 log = AutomationLogger.automation()
@@ -18,7 +18,7 @@ class TestBlazeLogin:
         try:
             log.info("Test has started")
 
-            Blaze = Blaze(self.driver)
+            Blaze = Blaze1(self.driver)
             Blaze.BlazeAdminLogin(username=username, password=password)
 
             log.info("Login function executed successfully")

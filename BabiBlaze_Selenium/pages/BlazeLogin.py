@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from utilities.functions import *
 
-class Blaze():
+class Blaze1():
     def __init__(self, driver):
         self.driver = driver
 

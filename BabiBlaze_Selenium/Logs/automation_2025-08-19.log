@@ -46,3 +46,12 @@
 2025-08-19 20:55:53,614 - XpertLogin - INFO - Clicked login button
 2025-08-19 20:55:54,123 - XpertLogin - INFO - Dashboard element found – login successful
 2025-08-19 20:55:54,124 - <module> - INFO - Login function executed successfully
+2025-08-19 22:04:29,327 - <module> - INFO - Test has started
+2025-08-19 22:04:29,327 - <module> - ERROR - An error occurred: cannot access local variable 'Blaze' where it is not associated with a value
+2025-08-19 22:05:38,459 - <module> - INFO - Test has started
+2025-08-19 22:05:38,513 - BlazeLogin - INFO - Email element located
+2025-08-19 22:05:38,542 - BlazeLogin - INFO - Sent username
+2025-08-19 22:05:38,550 - BlazeLogin - INFO - Sent password
+2025-08-19 22:05:38,619 - BlazeLogin - INFO - Clicked login button
+2025-08-19 22:05:40,643 - BlazeLogin - INFO - Dashboard element found – login successful
+2025-08-19 22:05:40,643 - <module> - INFO - Login function executed successfully
