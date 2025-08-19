@@ -30,7 +30,3 @@ def XpertLogin(self, username, password):
     
     self.driver.find_element(By.XPATH, '/html/body/div/div/form/button').click()
     log.info("Clicked login button")
-    
-    self.driver.find_element(By.XPATH, '//*[@id="nova"]/div/div[2]/div[1]/div[2]/div/button/div').click()
-    self.driver.find_element(By.LINK_TEXT, 'Logout').click()
-    log.info("Logged out")
