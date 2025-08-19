@@ -26,3 +26,9 @@
 2025-08-19 20:46:36,434 - XpertLogin - INFO - Sent password
 2025-08-19 20:46:45,665 - XpertLogin - INFO - Clicked login button
 2025-08-19 20:46:45,665 - <module> - INFO - Login function executed successfully
+2025-08-19 20:49:08,710 - <module> - INFO - Test has started
+2025-08-19 20:49:08,729 - XpertLogin - INFO - Email element located
+2025-08-19 20:49:08,755 - XpertLogin - INFO - Sent username
+2025-08-19 20:49:08,768 - XpertLogin - INFO - Sent password
+2025-08-19 20:49:25,591 - XpertLogin - INFO - Clicked login button
+2025-08-19 20:49:25,591 - <module> - INFO - Login function executed successfully
