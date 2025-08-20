@@ -1,0 +1,7 @@
+2025-08-20 09:59:10,144 - <module> - INFO - Test has started
+2025-08-20 09:59:10,256 - BlazeLogin - INFO - Email element located
+2025-08-20 09:59:10,320 - BlazeLogin - INFO - Sent username
+2025-08-20 09:59:10,358 - BlazeLogin - INFO - Sent password
+2025-08-20 09:59:10,586 - BlazeLogin - INFO - Clicked login button
+2025-08-20 09:59:12,626 - BlazeLogin - INFO - Dashboard element found – login successful
+2025-08-20 09:59:12,627 - <module> - INFO - Login function executed successfully
